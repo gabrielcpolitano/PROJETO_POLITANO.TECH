@@ -97,7 +97,7 @@
     "yaml": "^2.7.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "game": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "",
   "license": "ISC",
