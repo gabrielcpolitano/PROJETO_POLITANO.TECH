@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politano.Tech</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <title>Politano.Tech | Tecnologia para o seu sucesso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Politano.Tech">
@@ -24,95 +24,67 @@
   <meta property="og:type" content="website">
 </head>
 
-<body>
-
-  <header>
-    <nav aria-label="Nome do Site">
-      <img src="images/icon.png" alt="icon">
-      <h1>Politano.Tech</h1>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Página inicial">
+        <img src="images/icon.png" alt="Logotipo da Politano Tech" class="w-12 h-12">
+        <h1 class="text-lg font-bold">Politano.Tech</h1>
+      </a>
     </nav>
   </header>
 
-  <main>
-    <section id="servicos">
-
-      <h1>NOSSOS SERVIÇOS</h1>
-
-      <div class="cartoes">
-
-        <a href="delivery">
-          <div class="moto">
-
-          <h2>PEDIDOS ONLINE</h2>
-          <img src="images/moto.png" alt="moto">
-          <p>SAIBA MAIS</p>
- 
-          </div>
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Serviços -->
+    <section id="servicos" class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Nossos Serviços</h2>
+      <div class="flex flex-col items-center justify-center gap-8 mx-auto max-w-screen-lg">
+        <a href="delivery" class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" aria-label="Saiba mais sobre pedidos online">
+          <figure class="text-center">
+            <img src="images/moto.png" alt="Entrega por moto" class="w-32 mx-auto mb-4">
+            <figcaption class="text-lg font-semibold">Pedidos Online</figcaption>
+          </figure>
+          <p class="text-sm text-gray-600 mt-4">Conectamos negócios a clientes de forma prática e eficiente.</p>
         </a>
-
-        <a href="marketing">
-          <div class="cabelo">
-
-            <h2>MARKETING</h2>
-            <img src="images/cabelo.png" alt="cabelo">
-            <p>SAIBA MAIS</p>
-
-          </div>
-        </a>
-
       </div>
-
     </section>
 
-    <section id="sucesso">
+    <!-- Sucesso -->
+    <section id="sucesso" class="py-16 bg-blue-50 rounded-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">Seu Sucesso</h2>
+      <p class="text-center text-lg max-w-2xl mx-auto mb-8">Encontre seu ponto de impulso para transformar negócios e vidas. Somos uma startup inovadora com soluções práticas e inteligentes.</p>
 
-      <h1>SEU SUCESSO</h1>
-      
-      <p>AQUI você encontra seu ponto, para impulsionar negócios e transformar vidas. Somos uma startup inovadora, dedicada a oferecer soluções práticas e inteligentes que facilitam o dia a dia dos empresários.</p>
-      
-      <img src="images/sucesso.jpg" alt="sucesso">
+      <figure class="text-center mb-8">
+        <img src="images/sucesso.jpg" alt="Equipe celebrando sucesso" class="rounded-lg shadow-md mx-auto w-full max-w-4xl">
+        <figcaption class="text-sm text-gray-500 mt-2">Sucesso com tecnologia</figcaption>
+      </figure>
 
-
-      <p><strong>Nosso foco está em suas prioridades: </strong> </p>
-
-      <ul>
-        <li>Serviços de MARKETING, simplificamos e gerenciamos, oferecendo uma experiência impecável, melhorando sua imagem online, e aumentando sua receita significativamente.</li>
-        <li>Serviços de PEDIDOS ONLINE para Restaurantes, Lanchonetes e Pizzarias: Criamos plataformas personalizadas que conectam negócios a um público maior, com rapidez e eficiência.</li>
+      <h3 class="text-2xl font-semibold mb-4">Nosso foco está em suas prioridades:</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Soluções personalizadas para pedidos online.</li>
+        <li>Eficiência e conexão direta com clientes.</li>
       </ul>
-      
-      <div class="cartao">
-        <p>Mais do que uma empresa de tecnologia, somos parceiros na sua jornada de crescimento. Estamos comprometidos em ajudar empresários a se destacarem no mercado, economizando tempo e aumentando os resultados.</p>
 
-        <p><i>Tecnologia ao lado do empreendedor <b>POLITANO TECH</b></i></p>
-      </div>
-      
+      <blockquote class="mt-8 bg-white border-l-4 border-blue-600 text-gray-700 italic rounded-lg shadow-md px-6 py-4">
+        <p>"Mais do que uma empresa de tecnologia, somos seus parceiros na jornada de crescimento."</p>
+      </blockquote>
     </section>
-
   </main>
 
-    <footer>
-
-      <div class="conteudo">
-
-        <section>
-          <h2>Contato</h2>
-          <address>
-            <p>Email: politanotech@gmail.com</p>
-            <p>Telefone: (17) 99649-0503</p>
-          </address>
-          
-        </section>
-
-      </div>
-
-      <div class="direitos">
-
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <section class="mb-6 md:mb-0">
+        <h3 class="text-lg font-bold mb-2">Contato</h3>
+        <address class="not-italic text-sm">
+          <p>Email: <a href="mailto:politanotech@gmail.com" class="hover:underline">politanotech@gmail.com</a></p>
+          <p>Telefone: <a href="tel:+5517996490503" class="hover:underline">(17) 99649-0503</a></p>
+        </address>
+      </section>
+      <div class="text-sm">
         <p>&copy; 2024 Politano.Tech. Todos os direitos reservados.</p>
-
       </div>
-
-    </footer>
-
+    </div>
+  </footer>
 </body>
 
 </html>
